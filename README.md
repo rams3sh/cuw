@@ -19,7 +19,7 @@ CUW exports a csv format file "MSPatches.csv" containing only important columns 
 Note : Raw database is in sqlite format. If you want to view the table in the database, you can use any sqlite viewer tool.
 
 Now the user can use this csv to filter out the the updates containing keyword pertaining to the target operating system or the product installed using his/her super excel powers. The problem doesnt end there as the updates which have been filtered may have superseded updates. So to solve this , the user copies the updateids from the csv file after filtering out the keywords from the file into a text file.
-Now this text file is fed into the cuw tool using the "scan" option. CUW takes in the updateids, check for superseded patches within the database and after applying internal logic, gives out the final applicable patch ids which is supposed to be present in the system. Now this output can be used to compare the existing patches and determine the missing patches / vulnerabilities in the target system.
+Now this text file is fed into the cuw tool using the "scan" option. CUW takes in the updateids, check for superseded patches within the database and after applying internal logic, gives out the final applicable patch ids which is supposed to be present in the system. Now this output can be used to compare with the existing patches (results obained from wmic qfe list command, refer "Some of the Key Information required for the user to filter the required updateids before using the tool" section below) and determine the missing patches / vulnerabilities in the target system.
 
 Q) Cant this entire thing of user selecting the required patches and feeding to CUW be automated ?
 
