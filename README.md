@@ -1,5 +1,4 @@
 # cuw
-
 CUW or (C)heck for (U)pdates for (W)indows tool
 
 The tool helps a person in assessing the maturity of patching cycle for a system.
@@ -16,11 +15,14 @@ How To use
 -----------
 
 Usage:-
+                
+
         cuw.exe scan <filename with updateids> - Checks for Update ids in the input file and gives the final list of applicable updates with details
-        cuw.exe scan <filename with updateids> output <output file name> - Same as the previous option with the output (with extra details) being exported as csv
-        cuw.exe update - Updates the local patch database (Requires Internet Connection and some patience !! :P)
-        cuw.exe exportdb <filename of the exported csv>" - Exports the local patch database as csv file
-        cuw.exe help  -  Displays this help
+                cuw.exe scan <filename with updateids> output <output file name> - Same as the previous option with the output (with extra details) being exported as csv
+                cuw.exe update - Updates the local patch database (Requires Internet Connection and some patience !! :P)
+                cuw.exe exportdb <filename of the exported csv>" - Exports the local patch database as csv file
+                cuw.exe help  -  Displays this help
+        
   
  Dependency
  ----------
