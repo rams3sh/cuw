@@ -324,7 +324,7 @@ elif sys.argv.__len__() ==3:
 elif sys.argv.__len__()==5:
 	if sys.argv[1]== "scan" and os.path.isfile(sys.argv[2]) and sys.argv[3] == "output":
 		scan(sys.argv[2])
-		export(sys.argv[3])
+		export(sys.argv[4])
 	else:
 		help()
 else:
