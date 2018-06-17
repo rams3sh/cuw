@@ -1,12 +1,12 @@
 # cuw
-CUW or (C)heck for (U)pdates for (W)indows tool
+CUW or (C)heck for (U)pdates for (W)indows
 
-CUW helps in assessing the maturity of patching cycle for a system.
+CUW is a local windows update database maintainer/ updater tool which also solves patch superseding logic for a given machine in offline without dependency on WSUS or WUA. 
 
 Background about CUW
 -------------------------
 
-Major inspiration for creation of this tool was to check out the vulnerabilities (in case of a pentest, to find applicable exploits for post exploitation phase) in the existing system and to determine the patch life cycle maturity ( i.e missing patches, same logic as pentest but different view :P ) in case of a compliance audit.
+Major inspiration for creation of this tool was to check out the vulnerabilities (in case of a pentest, to find applicable exploits for post exploitation phase) in the existing system and to determine the patch life cycle maturity ( i.e missing patches, same logic as pentest but different view :P ) in case of a compliance audit; in offline mode.
 
 Since determining if all required patches have been applied in the system is a trival task as there is no online one-stop efficient searchable database (post April 2017 because of discontinuation of periodic release of MS Bulletin Excel file)  where patches, its's subsequent superseded patches, patch description etc for a specific product can be searched out and compared with the list of patches installed in the system (if any); and further more to add to the problem is solving manually the logic of superseded patches. Hence the motivation to build this tool.
 
