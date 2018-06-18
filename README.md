@@ -42,7 +42,7 @@ WSUSSCN2.CAB Equivalent Product Name: Office 2016
 
 Simple search for existence for 2016 and Office is not enough as there are other examples such as MSSQL 2008 R2 Server as product and installed application is just MSSQL 2008 Client. Hence word matching logic does not work. 
 
-Tried for fuzzy string match logic, still identifying and fixing a threshold ratio for string match was difficult and was not consistent throughout.Hence left the challenge of selecting the updates to the user.
+Tried for fuzzy string match logic using fuzzywuzzy library (https://github.com/seatgeek/fuzzywuzzy_, but still identifying and fixing a threshold ratio for string match was difficult and was not consistent throughout.Hence left the challenge of selecting the updates to the user.
 
 If you have any solution for this, you can let me know at my mail id godzillagenx@gmail.com (dont judge me by my emailid:P)
 
@@ -68,8 +68,11 @@ This helps in filtering out the updates further from a set of updates applicable
 
 Example :-
 Both of the following updates apply for Windows 10 but each one for different Version of Windows 10
+
 i. 2018-06 Cumulative Update for Windows 10 Version 1709 for x64-based Systems
+
 ii. 2018-06 Cumulative Update for Windows 10 Version 1803 for x64-based Systems
+
 So differentiating factor is the Version Number here.
   
 Command :reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ReleaseId
@@ -102,21 +105,21 @@ Usage:-
   
 External Dependency
 -------------------
- 
+ cuw currently works only on windows due to hard coded windows based commands in the script.
  cuw depends on 7zip binary. 
  The required binaries has been packed along with the release zip file. The author claims no ownership over the same.
  
 Note
 ----
-If you are using the source cuw.py, then you would have to dowload 7z binaries (7z.exe and 7z.dll) separately from the official site and place it in class path and update the entire database. The initial updation on my machine which is i7 7th gen with 8GB Ram and Win10 OS took 3 hours of time.
+If you are using the source cuw.py, then you would have to dowload 7z binaries (7z.exe and 7z.dll) separately from the official site and place it in class path and update the entire database. The initial database updation on my machine which is i7 7th gen with 8GB Ram and Win10 OS took 3 hours of time.
  
-The release zip has been also packed with latest updated database and csv file as on 17-6-2018 to avoid long update process.
+The release zip has been packed with latest updated database and csv file as on 17-6-2018 to avoid long update process in the first subsequent update event.
 
 
 Future Plans
 -------------
 
-To add exploitdb informations to the database so that a mapping exploit (if any) also could be given out along with the report. More or less like windows_privesc_check (https://github.com/pentestmonkey/windows-privesc-check/blob/master/docs/MissingSecurityPatchesVsPublicExploits.md) just that I wouldnt want to limit to priv escalation related exploit alone.
+To add exploitdb informations to the database so that a mapping exploit (if any) also could be given out along with the report. More or less like windows_privesc_check (https://github.com/pentestmonkey/windows-privesc-check) just that I wouldnt want to limit it to priv escalation related exploit alone.
 
 
 
