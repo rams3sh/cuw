@@ -42,7 +42,7 @@ WSUSSCN2.CAB Equivalent Product Name: Office 2016
 
 Simple search for existence for 2016 and Office is not enough as there are other examples such as MSSQL 2008 R2 Server as product and installed application is just MSSQL 2008 Client. Hence word matching logic does not work. 
 
-Tried for fuzzy string match logic using fuzzywuzzy library (https://github.com/seatgeek/fuzzywuzzy_, but still identifying and fixing a threshold ratio for string match was difficult and was not consistent throughout.Hence left the challenge of selecting the updates to the user.
+Tried for fuzzy string match logic using fuzzywuzzy library (https://github.com/seatgeek/fuzzywuzzy) but still identifying and fixing a threshold ratio for string match was difficult and was not consistent throughout.Hence left the challenge of selecting the updates to the user.
 
 If you have any solution for this, you can let me know at my mail id godzillagenx@gmail.com (dont judge me by my emailid:P)
 
