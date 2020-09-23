@@ -44,8 +44,6 @@ Simple search for existence for 2016 and Office is not enough as there are other
 
 Tried for fuzzy string match logic using fuzzywuzzy library (https://github.com/seatgeek/fuzzywuzzy) but still identifying and fixing a threshold ratio for string match was difficult and was not consistent throughout.Hence left the challenge of selecting the updates to the user.
 
-If you have any solution for this, you can let me know at my mail id godzillagenx@gmail.com (dont judge me by my emailid:P)
-
 If this challenge is overcome, the process of update selection by the user can be automated.
 
 
